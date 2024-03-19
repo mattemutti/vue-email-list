@@ -12,11 +12,13 @@
 	<div id='app'>
 
 		<ul>
-			<li v-for="(mail, index) in userMail">
-				{{userMail[index]}}
-			</li>
+			<div v-if="userMail.length >= 10 ">
+				<li v-for="(mail, index) in userMail">
+					{{userMail[index]}}
+				</li>
+			</div>
 		</ul>
-		
+
 
 
 	</div>

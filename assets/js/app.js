@@ -4,6 +4,7 @@ createApp({
 	data() {
 		return {
 			userMail: [],
+			
 
 		}
 	},
@@ -23,12 +24,7 @@ createApp({
 			console.log(this.userMail);
 		}
 	},
-	mounted() {
-
+	created() {
 		this.genMail()
-
-
-
-
 	}
 }).mount('#app')
